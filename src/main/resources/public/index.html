@@ -1,0 +1,49 @@
+<html>
+
+<head>
+	<title>RSocket Demo</title>
+	<link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+	<h2>Filtering by User</h2>
+	<select id="user-filter">
+		<option value="Yogesh">Yogesh</option>
+		<option value="Avijit">Avijit</option>
+		<option value="Vamshi">Vamshi</option>
+		<option value="INR-USD-USER">INR-USD-USER</option>
+	</select>
+
+	<h2>Messages</h2>
+	<p>
+	<ul id="messages">
+
+	</ul>
+	</p>
+	
+	<div class="row">
+        <div class="col-md-12">
+        	<h3>Holdings</h3>
+            <table id="conversation" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Stock (Currency)</th>
+                    <th>Quantity</th>
+                    <th>Buy Price </th>
+                    <th>Market Price</th>
+                    <th>P/L</th>
+                    <th>P/L %</th>
+                </tr>
+                </thead>
+                <tbody id="holdings">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>

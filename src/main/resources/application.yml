@@ -1,0 +1,14 @@
+websocket:
+  mock:
+    data:
+      host: ws://localhost:9999/mockdatafeed
+server:
+  port: 8080
+spring:
+  main:
+    lazy-initialization: true
+  rsocket:
+    server:
+      port: 7000
+      mapping-path: /holding-socket
+      transport: websocket

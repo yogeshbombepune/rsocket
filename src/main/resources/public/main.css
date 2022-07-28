@@ -1,0 +1,10 @@
+td {
+  color:black;
+}
+td.negative {
+  color: red;
+}
+
+td.positive {
+  color: green;
+}
